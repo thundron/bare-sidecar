@@ -8,21 +8,13 @@
   },
   "imports": {
     "#bare": {
-      "darwin": {
-        "arm64": "./prebuilds/darwin-arm64/bare",
-        "x64": "./prebuilds/darwin-x64/bare"
-      },
-      "linux": {
-        "arm64": "./prebuilds/linux-arm64/bare",
-        "x64": "./prebuilds/linux-x64/bare"
-      },
-      "win32": {
-        "arm64": "./prebuilds/win32-arm64/bare.exe",
-        "x64": "./prebuilds/win32-x64/bare.exe"
-      }
-    },
-    "#bare-universal": {
-      "darwin": "./prebuilds/darwin-universal/bare",
+      "darwin": [
+        {
+          "arm64": "./prebuilds/darwin-arm64/bare",
+          "x64": "./prebuilds/darwin-x64/bare"
+        },
+        "./prebuilds/darwin-universal/bare"
+      ],
       "linux": {
         "arm64": "./prebuilds/linux-arm64/bare",
         "x64": "./prebuilds/linux-x64/bare"
